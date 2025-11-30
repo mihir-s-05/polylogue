@@ -112,7 +112,7 @@ def select_next_agent(conversation: ConversationState) -> AgentState | None:
         score += min(time_since_spoke / 60.0, 10.0)  # Cap at 10 minutes worth
         
         # Priority node factor - favor agents working on priority nodes
-        if agent.current_node_id in conversation.priority_node_ids:
+        if agent.current_node_id and agent.current_node_id in conversation.priority_node_ids:
             score += 5.0
         
         agent_scores.append((agent, score))
