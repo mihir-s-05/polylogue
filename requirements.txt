@@ -1,0 +1,20 @@
+# LLM Council MVP Requirements
+
+# FastAPI framework and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# For future OpenAI integration (currently using stubs)
+# openai==1.3.0
+
+# Standard library dependencies (included in Python)
+# - dataclasses
+# - json
+# - re
+# - uuid
+# - datetime
+# - logging
+# - typing
+# - math
+# - random
